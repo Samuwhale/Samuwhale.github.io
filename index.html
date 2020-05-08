@@ -1,74 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Experiment Intro</title>
-<!-- Bootstrap -->
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
-</style>
-</head>
-<body>
-<header>
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center">Thank you for participating, let's get started!</h1>
-          <p>&nbsp;</p>
-<p class="text-center">The following experiment consists of a short period of gameplay (5 minutes), followed by a short questionnaire (approximately 5-15 minutes).<br>
-        </p>
-          <p class="text-center">&nbsp;</p>
-<p class="text-center"><em><strong>Game instructions:</strong></em><br>
-The goal of the game is to survive as long as possible by dodging the obstacles, the longer you survive the higher your score will be.     &nbsp; <br>
-            Dodging is done by moving your character up and down, using the up and down arrow keys. On the top left of the screen you can see your 'HP', short for health points. This shows you how many hits you can take before you hit the game over screen and have to restart.&nbsp; &nbsp; </p>
-<p class="text-center">You will be given five minutes of play time, during which you get infinte retries to improve your high-score. To let you know how much time is left, there will be a timer visibly counting down . Once the timer has run out, you will be allowed to continue your current run but you will not be able to restart upon getting a game over. Instead the game will redirect you to the final screen with a link to the questionnaire.</p>
-<p class="text-center">&nbsp;</p>
-<p class="text-center"><strong><em>Important notes: </em></strong><br>
-  - It is necessary to play the game with your<em> audio enabled</em>, with nothing else playing in the background (no YouTube, Spotify, Radio, etc.)<br>
-- The game works best on computers, it also works on tablets with connected keyboards. However, due to the way the controls are set up, it does not work on phones.&nbsp;</p>
-<p class="text-center">&nbsp;</p>
-<p class="text-center">Alright, that's all, once again, thank you for participating and more importantly, have fun! &nbsp; </p>
-
-
-<?php
-$addresses = [
-    'http://www.google.com',
-    'http://www.facebook.com',
-    'http://www.youtube.com'
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to sfspithorst.me!</title>
+  </head>
+  <body>
+	<h2><strong>Index:</strong></h2>
+	<ul>
+	<li>
+	<h2><a href="http://www.sfspithorst.me/V1.1/var0/index.html"><strong>Variant 0: No Music</strong></a></h2>
+	</li>
+	<li>
+	<h2><a href="http://www.sfspithorst.me/V1.1/var1/index.html"><strong>Variant 1: Classical Music</strong></a></h2>
+	</li>	<li>
+	<h2><a href="http://www.sfspithorst.me/V1.1/var2/index.html"><strong>Variant 2: Ambient Music</strong></a></h2>
+	</li>
+	</ul>
+<a href='javascript:openUrl()'>Visit here</a>
+<script>
+var sites=['http://www.google.com/',
+'http://www.msn.com/',
+'http://www.yahoo.com/'
 ];
-$size = count($addresses);
-$randomIndex = rand(0, $size - 1);
-$randomUrl = $addresses[$randomIndex];
-?>
 
+function openUrl(){
+    var i = Math.round(Math.random()*(sites.length-1));
+    window.location.href=sites[i];
+    return false;
+}
+</script>
 
-<a href="<?php echo $randomUrl; ?>">random url</a>
-          <p class="text-center"><a class="btn btn-primary btn-lg" href="<?php echo $randomUrl; ?>" role="button">Play the game!</a> </p>
-
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <p>For questions contact me at <a href="mailto:s.f.spithorst@students.uu.nl">s.f.spithorst@students.uu.nl</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.4.1.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
-</body>
+  </body>
 </html>
