@@ -1,7 +1,7 @@
 {
 "companyName": "Samuel Spithorst",
 "productName": "THESIS GAME GROUP 2",
-"productVersion": "1",
+"productVersion": "1.3",
 "dataUrl": "var2.data.unityweb",
 "wasmCodeUrl": "var2.wasm.code.unityweb",
 "wasmFrameworkUrl": "var2.wasm.framework.unityweb",
