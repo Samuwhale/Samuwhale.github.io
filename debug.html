@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to sfspithorst.me!</title>
+  </head>
+  <body>
+	<h2><strong>Index:</strong></h2>
+	<ul>
+	<li>
+	<h2><a href="http://www.sfspithorst.me/V1.1/var0/index.html"><strong>Variant 0: No Music</strong></a></h2>
+	</li>
+	<li>
+	<h2><a href="http://www.sfspithorst.me/V1.1/var1/index.html"><strong>Variant 1: Classical Music</strong></a></h2>
+	</li>	<li>
+	<h2><a href="http://www.sfspithorst.me/V1.1/var2/index.html"><strong>Variant 2: Ambient Music</strong></a></h2>
+	</li>
+	</ul>
+	<a href='javascript:openUrl()'>Here</a>
+		<script>
+		var sites=['http://www.google.com/',
+		'http://www.msn.com/',
+		'http://www.yahoo.com/'
+		];
+
+		function openUrl(){
+			var i = Math.round(Math.random()*(sites.length-1));
+			window.location.href=sites[i];
+			return false;
+		}
+		</script>
+  </body>
+</html>
